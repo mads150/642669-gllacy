@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Елена Ботвинникова](https://up.htmlacademy.ru/htmlcss/23/user/642669).
-* Наставник: [Ладо Микиашвили](https://htmlacademy.ru/profile/id902941).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
