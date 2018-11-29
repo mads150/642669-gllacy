@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +14,7 @@
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog-items.html">Каталог</a>
+          <li class="catalog-items-list"><a href="catalog-items.html">Каталог</a>
             <h2>Новинки</h2>
             <ul class="new-products">
               <li><a href="#">Сливочное</a></li>
@@ -28,17 +30,20 @@
           <li>
             <a class="search-field" href="#"></a>
             <h2 class="visually-hidden">Поиск товара</h2>
-            <form class="search-form" action="https://htmlacademy.ru" method="get">
-              <p>
-              <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
-              <label class="visually-hidden" for="search-field">Поле поиска</label>
-            </p>
-              <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+           <form class="search-form" action="https://htmlacademy.ru" method="get">
+              <div class="search-form-container">
+                <p>
+                <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="search-field">Поле поиска</label>
+              </p>
+                <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+              </div>
             </form>
         </li>
           <li>
             <a class="login-link" href="login.html">Вход</a>
             <form class="login-form" action="https://htmlacademy.ru" method="post">
+            <div class="login-form-container">
               <div>
                 <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
               <label class="visually-hidden" for="user-email">Электронная почта</label>
@@ -54,14 +59,17 @@
               <a class="new-registration" href="#">Новая регистрация</a>
             </div>
             <button class="button" type="submit">Войти</button>
+          </div>
             </form>
           </li>
           <li>
             <a class="cart" href="cart.html">Пусто</a>
           </li>
         </ul>
+        <div class="hours-and-telephone">
         <p class="opening-hours">С 10 до 20, ежедневно</p>
         <p class="order-telephone"><strong>8 812 450-25-25</strong></p>
+      </div>
       </nav>
     </header>
     <main class="container">
@@ -74,6 +82,7 @@
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
           производства на развес
         </h2>
+        <div class="container">
           <p class="gllacy-info-items">
             Все наше мороженое изготавливается на собственном производстве,
              с использованием современного оборудования и проверенных временем технологий.
@@ -93,6 +102,7 @@
             специальном термопаке, который не дает мороженому растаять в
             пути и позволяет сохранить превосходный вкус.
           </p>
+        </div>
       </section>
      <section class="gllacy-blog">
        <h2 class="visually-hidden">Блог магазина мороженого Gllacy</h2>
@@ -116,7 +126,7 @@
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a href="#">Твиттер</a></li>
+        <li class="for-providers"><a href="#">Твиттер</a></li>
         <li><a href="#">Инстаграм</a></li>
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Вконтакте</a></li>
@@ -128,8 +138,8 @@
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="112" height="41" alt="Логотип Html Academy"></a>
-        <p><a href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a></p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="128" height="41" alt="Логотип Html Academy"></a>
+        <p class="made-in"><a href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a></p>
       </div>
     </footer>
     <section class="modal modal-feedback">

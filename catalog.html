@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,64 +14,70 @@
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="">Каталог</a>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О Компании</a></li>
+          <li class="site-navigation-current"><a href="#">Каталог</a>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
           <li>
             <a class="search-field" href="#"></a>
             <h2 class="visually-hidden">Поиск товара</h2>
             <form class="search-form" action="https://htmlacademy.ru" method="get">
-              <div>
-              <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
-              <label class="visually-hidden" for="search-field">Поле поиска</label>
-            </div>
-              <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+               <div class="search-form-container">
+                <div>
+                <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="search-field">Поле поиска</label>
+              </div>
+                <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+              </div>
             </form>
         </li>
           <li>
             <a class="login-link" href="login.html">Вход</a>
             <form class="login-form" action="https://htmlacademy.ru" method="post">
+              <div class="login-form-container">
+                <div>
+                  <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+              </div>
               <div>
-                <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
-              <label class="visually-hidden" for="user-email">Электронная почта</label>
-            </div>
-            <div>
-              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-              <label class="visually-hidden" for="user-password">Пароль</label>
-            </div>
-            <div class="login-password-info">
-              <a class="restore" href="#">Забыли пароль?</a>
-            </div>
-            <div class="registration">
-              <a class="new-registration" href="#">Новая регистрация</a>
-            </div>
-            <button class="button" type="submit">Войти</button>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+              </div>
+              <div class="login-password-info">
+                <a class="restore" href="#">Забыли пароль?</a>
+              </div>
+              <div class="registration">
+                <a class="new-registration" href="#">Новая регистрация</a>
+              </div>
+              <button class="button" type="submit">Войти</button>
+          </div>
             </form>
           </li>
           <li>
             <a class="cart" href="cart.html">2 товара</a>
             <h2 class="visually-hidden">Товары в корзине</h2>
             <form class="cart-form" action="https://htmlacademy.ru" method="get">
+              <div class="form-container">
              <table class="products-table">
               <tr class="product-row">
                 <td><button class="visually-hidden closing-button" type="button">Удалить</button></td>
                 <td><img src="img/little-icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
+                <td>1,5 кг х <span class="price-for-kg">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr class="product-row">
                 <td><button class="visually-hidden closing-buton" type="button">Удалить</button></td>
                 <td><img src="img/little-icecream2.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
+                <td>1,5 кг х <span class="price-for-kg">300 руб.</span></td>
                 <td>450 руб.</td>
               </tr>
             </table>
-            <p><strong>Итого:750 руб.</strong></p>
-            <button class="button" type="submit">Оформить заказ</button>
+              <p class="cart-sum"><strong>Итого:750 руб.</strong></p>
+              <button class="button" type="submit">Оформить заказ</button>
+            </div>
           </form>
           </li>
         </ul>
