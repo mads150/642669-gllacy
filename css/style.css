@@ -154,14 +154,34 @@ a:focus {
   background-color: #a1b4a9;
 }
 
+.form-container {
+ font-size: 13px;
+ font-weight: 400;
+ line-height: 24px;
+ color: #323232;
 
-.search-form input[type="text"] + label,
-.login-form input[type="text"] + label {
+ background-color: #f8f7f4;
+}
+
+.search-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #999999;
 }
+
+.search-form input:hover,
+.login-form input:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.search-form input:focus,
+.login-form input:focus {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
 
 .opening-hours {
   font-size: 14px;
@@ -245,7 +265,7 @@ a:focus {
 }
 
 
-.newsletter-form input[type="text"] + label {
+.newsletter-form input[type="text"] {
   font: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -256,11 +276,11 @@ a:focus {
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
-.newsletter-form input:hover + label {
+.newsletter-form input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.newsletter-form input:focus + label {
+.newsletter-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -333,21 +353,22 @@ a:focus {
 
 /*Стили для формы обратной связи*/
 
-.feedback-form input[type="text"] + label {
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.feedback-form input:hover + label {
+.feedback-form input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.feedback-form input:focus + label {
+.feedback-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
-.feedback-form input[value="Вася"] + label {
+.feedback-form input[value="Вася"] {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -355,17 +376,17 @@ a:focus {
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
-.feedback-form textarea + label{
+.feedback-form textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.feedback-form textarea:hover + label {
+.feedback-form textarea:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.feedback-form textarea:focus + label {
+.feedback-form textarea:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 

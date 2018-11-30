@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo" href="index.html">
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
         <ul class="site-navigation">
@@ -24,11 +24,13 @@
             <h2 class="visually-hidden">Поиск товара</h2>
             <form class="search-form" action="https://htmlacademy.ru" method="get">
                <div class="search-form-container">
-                <div>
-                <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
-                <label class="visually-hidden" for="search-field">Поле поиска</label>
-              </div>
-                <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+                  <div>
+                  <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
+                  <label class="visually-hidden" for="search-field">Поле поиска</label>
+                 </div>
+                 <div>
+                   <a class="visually-hidden" href="#">Кнопка поиска</a>
+                 </div>
               </div>
             </form>
         </li>
@@ -61,14 +63,14 @@
               <div class="form-container">
              <table class="products-table">
               <tr class="product-row">
-                <td><button class="visually-hidden closing-button" type="button">Удалить</button></td>
+                <td><button class="closing-button" type="button"><a class="visually-hidden" href="#">Удалить</a></button></td>
                 <td><img src="img/little-icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td>Пломбир с апельсиновым джемом</td>
                 <td>1,5 кг х <span class="price-for-kg">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr class="product-row">
-                <td><button class="visually-hidden closing-buton" type="button">Удалить</button></td>
+                <td><button class="closing-button" type="button"><a class="visually-hidden" href="#">Удалить</a></button></td>
                 <td><img src="img/little-icecream2.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг х <span class="price-for-kg">300 руб.</span></td>
@@ -87,7 +89,7 @@
     </header>
     <main class="container">
       <ul class="breadcrumps">
-        <li><a href="#">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li class="breadcrumps-current">Сливочное</li>
       </ul>
@@ -260,10 +262,10 @@
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Вконтакте</a></li>
+          <li class="for-providers"><a class="visually-hidden" href="https://twitter.com/htmlacademy_ru">Твиттер</a></li>
+          <li><a class="visually-hidden" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
+          <li><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
+          <li><a class="visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a></li>
         </ul>
       </div>
       <ul class="footer-menu">
@@ -273,7 +275,7 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="112" height="41" alt="Логотип Html Academy"></a>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="128" height="41" alt="Логотип Html Academy"></a>
         <p><a href="https://htmlacademy.ru">Сделано в HTML Academy © 2017</a></p>
       </div>
     </footer>

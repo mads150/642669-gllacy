@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo" href="index.html">
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
         <ul class="site-navigation">
@@ -32,11 +32,13 @@
             <h2 class="visually-hidden">Поиск товара</h2>
            <form class="search-form" action="https://htmlacademy.ru" method="get">
               <div class="search-form-container">
-                <p>
+                <div>
                 <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
                 <label class="visually-hidden" for="search-field">Поле поиска</label>
-              </p>
-                <button class="visually-hidden search-button" type="submit">Кнопка поиска</button>
+              </div>
+              <div>
+                <a class="visually-hidden" href="#">Кнопка поиска</a>
+              </div>
               </div>
             </form>
         </li>
@@ -125,12 +127,14 @@
     </section>
     </main>
     <footer class="main-footer">
-      <ul class="footer-social">
-        <li class="for-providers"><a href="#">Твиттер</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
-      </ul>
+      <div class="footer-social">
+        <ul>
+          <li class="for-providers"><a class="visually-hidden" href="https://twitter.com/htmlacademy_ru">Твиттер</a></li>
+          <li><a class="visually-hidden" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
+          <li><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
+          <li><a class="visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a></li>
+        </ul>
+    </div>
      <ul class="footer-menu">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
