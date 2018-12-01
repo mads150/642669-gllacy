@@ -70,18 +70,13 @@ a:focus {
   display: none;
 }
 
-.site-navigation > li:hover .new-products {
+.catalog-items-list:hover > .new-products {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: #323232;
   text-decoration: none;
   display: block;
-}
-
-.site-navigation ul,
-.user-navigation ul {
-  list-style: none;
 }
 
 .site-navigation li,
@@ -159,9 +154,8 @@ a:focus {
  background-color: #f8f7f4;
 }
 
-.search-form input[type="text"],
-.login-form input[type="email"],
-.login-form input[type="password"] {
+.search-form input,
+.login-form input {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -207,7 +201,7 @@ a:focus {
   background-repeat: repeat-repeat-x;
 }
 
-.gllacy-description h2 {
+.gllacy-description {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -261,7 +255,7 @@ a:focus {
 }
 
 
-.newsletter-form input[type="text"] {
+.newsletter-form input {
   font: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -349,8 +343,7 @@ a:focus {
 
 /*Стили для формы обратной связи*/
 
-.feedback-form input[type="text"],
-.feedback-form input[type="email"] {
+.feedback-form input {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -364,7 +357,7 @@ a:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
-.feedback-form input[value="Вася"] {
+.feedback-form input {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -436,7 +429,7 @@ a:focus {
   text-decoration: none;
 }
 
-.page-title h1 {
+.page-title {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
