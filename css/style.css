@@ -66,11 +66,7 @@ a:focus {
   color: #ffffff;
 }
 
-.site-navigation .new-products, .site-navigation h2 {
-  display: none;
-}
-
-.site-navigation h2 {
+.site-navigation .new-products {
   display: none;
 }
 
