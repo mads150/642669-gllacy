@@ -57,7 +57,7 @@ a:focus {
 
 .main-header {
   /*Временно для сетки*/
-  outline: 1px solid #D76E06;
+  outline: 2px solid black;
 }
 
 .main-navigation {
@@ -69,48 +69,46 @@ a:focus {
   font-weight: 700;
   color: #ffffff;
   /*Временно для сетки*/
-  outline: 2px solid red;
+  outline: 2px solid white;
 }
 
 .main-navigation-wrapper {
   display: flex;
   /*Временно для сетки*/
-  outline: 1px solid #000000;
+  outline: 2px solid yellow;
 }
 
 .main-header-logo {
   width: 154px;
   height: 64;
-  padding: 5px;
-  margin-left: 27px;
-  margin-right: 25px;
+  margin-right: 20px;
   /*Временно для сетки*/
   outline: 2px solid #A94000;
 }
 
 .site-navigation {
-  width: 410px;
+  width: 385px;
   padding: 0;
   margin: 0;
-  margin-right: 153px;
+  /*margin-right: 153px;*/
   /*Временно для сетки*/
   outline: 2px solid #A94000;
 }
 
 .user-navigation {
-  width: 270px;
   padding: 0;
   margin: 0;
   margin-left: auto;
-  margin-right: 27px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
   /*Временно для сетки*/
   outline: 2px solid #A94000;
 }
 
 .hours-and-telephone {
   margin-left: auto;
-  margin-right: 27px;
-  width: 270px;
+  width: 170px;
   /*Временно для сетки*/
   outline: 1px solid #FFDD00;
 }
@@ -178,12 +176,6 @@ a:focus {
   line-height: 16px;
 }
 
-.user-navigation {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
 .user-navigation a {
   color: #ffffff;
   background-color: #a1b4a9;
@@ -225,6 +217,26 @@ a:focus {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/*Промо каталога*/
+.catalog-promo {
+  /*Временно для сетки*/
+  outline: 2px solid white;
+}
+
+.gllacy-hits-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  /*Временно для сетки*/
+  outline: 2px solid green;
+}
+
+.gllacy-hits-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*Gllacy info*/
@@ -355,17 +367,14 @@ a:focus {
 .main-footer {
   color: #ffffff;
   /*временно для верстки*/
-  outline: 1px solid #D76E06;
+  outline: 2px solid black;
 }
 
-.main-footer-wrapper {
+.main-footer .container {
   display: flex;
   justify-content: space-between;
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10;
   /*временно для верстки*/
-  outline: 1px solid #000000;
+  outline: 3px solid red;
 }
 
 .footer-social {
@@ -555,6 +564,12 @@ a:focus {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+}
+
+.catalog {
+  margin-bottom: 50px;
+  /*Временно для сетки*/
+  outline: 2px solid yellow;
 }
 
 .catalog-list {
