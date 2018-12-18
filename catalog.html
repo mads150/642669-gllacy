@@ -101,7 +101,7 @@
               <h2 class="visually-hidden">Товары в корзине</h2>
               <div class="cart-form-wrapper">
                 <form class="cart-form" action="https://htmlacademy.ru" method="get">
-                  <div class="form-container">
+                  <div class="cart-form-container">
                     <table class="products-table">
                       <tr class="product-row">
                         <td><button class="closing-button" type="button"><span class="visually-hidden">Удалить</span></button></td>
@@ -127,8 +127,12 @@
           </ul>
         </div>
         <div class="hours-and-telephone">
-          <p class="opening-hours">С 10 до 20, ежедневно</p>
-          <p class="order-telephone"><strong>8 812 450-25-25</strong></p>
+          <div class="opening-hours">
+            <p>С 10 до 20, ежедневно</p>
+          </div>
+          <div class="order-telephone">
+            <p><strong>8 812 450-25-25</strong></p>
+          </div>
         </div>
       </nav>
     </div>
@@ -142,7 +146,57 @@
     <h1 class="page-title">Сливочное мороженое</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <!-- Будет размечено позже -->
+      <form action="https://htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
+        <p>Сортировка:</p>
+        <select name="sorting">
+          <option value="по популярности">по популярности</option>
+          <option value="сначала недорогие">сначала недорогие</option>
+          <option value="сначала дорогие">сначала дорогие</option>
+          <option value="по жирности">по жирности</option>
+        </select>
+        <div>
+          <label for="pricecount">Цена: 100 руб. - 500 руб.</label>
+          <input type="range" id="pricecount" name="price" min="100" max="500" step="1">
+        </div>
+        <div class="output-area">
+          <output name="priceoutput"></output>
+        </div>
+        <div class="fat-percent">
+          <p>Жирность:</p>
+          <label>
+            <input type="radio" name="percent" value="0"> 0%
+          </label>
+          <label>
+            <input type="radio" name="percent" value="0" checked> до 10%
+          </label>
+          <label>
+            <input type="radio" name="percent" value="0"> до 30%
+          </label>
+          <label>
+            <input type="radio" name="percent" value="0"> свыше 30%
+          </label>
+        </div>
+        <div class="icecream-filler">
+          <p>Наполнители:</p>
+          <input type="checkbox" id="chocolate" name="chocolate" checked>
+          <label for="chocolate">шоколадные</label>
+
+          <input type="checkbox" id="sugar" name="sugar" checked>
+          <label for="sugar">сахарные присыпки</label>
+
+          <input type="checkbox" id="fruits" name="fruits">
+          <label for="fuits">Фрукты</label>
+
+          <input type="checkbox" id="syrup" name="syrup">
+          <label for="syrup">сиропы</label>
+
+          <input type="checkbox" id="jam" name="jam">
+          <label for="jam">джемы</label>
+        </div>
+        <div class="filters-button-wrapper">
+          <button class="button filter-button" type="submit">Применить</button>
+        </div>
+      </form>
     </section>
     <section class="catalog">
       <ul class="catalog-list">
@@ -340,6 +394,14 @@
         </li>
       </ul>
     </section>
+    <div class="paginator">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">></a>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="container">
