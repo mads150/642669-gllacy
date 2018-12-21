@@ -146,57 +146,84 @@
     <h1 class="page-title">Сливочное мороженое</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <form action="https://htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
-        <p>Сортировка:</p>
-        <select name="sorting">
-          <option value="по популярности">по популярности</option>
-          <option value="сначала недорогие">сначала недорогие</option>
-          <option value="сначала дорогие">сначала дорогие</option>
-          <option value="по жирности">по жирности</option>
-        </select>
-        <div>
-          <label for="pricecount">Цена: 100 руб. - 500 руб.</label>
-          <input type="range" id="pricecount" name="price" min="100" max="500" step="1">
-        </div>
-        <div class="output-area">
-          <output name="priceoutput"></output>
-        </div>
-        <div class="fat-percent">
-          <p>Жирность:</p>
-          <label>
-            <input type="radio" name="percent" value="0"> 0%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="0" checked> до 10%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="0"> до 30%
-          </label>
-          <label>
-            <input type="radio" name="percent" value="0"> свыше 30%
-          </label>
-        </div>
-        <div class="icecream-filler">
-          <p>Наполнители:</p>
-          <input type="checkbox" id="chocolate" name="chocolate" checked>
-          <label for="chocolate">шоколадные</label>
-
-          <input type="checkbox" id="sugar" name="sugar" checked>
-          <label for="sugar">сахарные присыпки</label>
-
-          <input type="checkbox" id="fruits" name="fruits">
-          <label for="fuits">Фрукты</label>
-
-          <input type="checkbox" id="syrup" name="syrup">
-          <label for="syrup">сиропы</label>
-
-          <input type="checkbox" id="jam" name="jam">
-          <label for="jam">джемы</label>
-        </div>
-        <div class="filters-button-wrapper">
-          <button class="button filter-button" type="submit">Применить</button>
-        </div>
-      </form>
+      <div class="filters-form-wrapper">
+        <form class="filter-form" action="https://htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
+          <div class="filter-row1">
+            <div class="filter sorting-filter">
+              <p>Сортировка:</p>
+              <div class="sorting-filter-wrapper">
+                <select name="sorting">
+                  <option value="popular" selected>по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fatness">по жирности</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter price-filter">
+              <p>Цена: 100 руб. - 500 руб.</p>
+              <div class="price-filter-wrapper">
+                <label for="pricecount"><span class="visually-hidden">Цена: 100 руб. - 500 руб.</span></label>
+                <input type="range" multiple  min="100" max="500" step="1" value="100" id="pricecount" name="price">
+                <div class="output-area">
+                  <output name="priceoutput"></output>
+                </div>
+              </div>
+            </div>
+            <div class="filter fat-filter">
+              <p>Жирность:</p>
+              <div class="fat-filter-wrapper">
+                <div>
+                  <input type="radio" name="percent" id="percent1" value="0%">
+                  <label for="percent1">0%</label>
+                </div>
+                <div>
+                  <input type="radio" name="percent" id="percent2" value="до 10%" checked>
+                  <label for="percent2">до 10%</label>
+                </div>
+                <div>
+                  <input type="radio" name="percent" id="percent3" value="до 30%">
+                  <label for="percent3">до 30%</label>
+                </div>
+                <div>
+                  <input type="radio" name="percent" id="percent4" value="свыше 30%">
+                  <label for="percent4">свыше 30%</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-row2">
+            <div class="filter filler-filter">
+              <p>Наполнители:</p>
+              <div class="filler-filter-wrapper">
+                <div>
+                  <input type="checkbox" id="chocolate" name="chocolate" checked>
+                  <label for="chocolate">шоколадные</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="sugar" name="sugar" checked>
+                  <label for="sugar">сахарные присыпки</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="fruits" name="fruits">
+                  <label for="fruits">фрукты</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="syrup" name="syrup">
+                  <label for="syrup">сиропы</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="jam" name="jam">
+                  <label for="jam">джемы</label>
+                </div>
+              </div>
+            </div>
+            <div class="filters-button-wrapper">
+              <button class="button filter-button" type="submit">Применить</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <section class="catalog">
       <ul class="catalog-list">
@@ -395,12 +422,11 @@
       </ul>
     </section>
     <div class="paginator">
-      <a href="#">1</a>
+      <a class="active" href="#">1</a>
       <a href="#">2</a>
       <a href="#">3</a>
       <a href="#">4</a>
       <a href="#">5</a>
-      <a href="#">></a>
     </div>
   </main>
   <footer class="main-footer">
