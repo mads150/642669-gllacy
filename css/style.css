@@ -2027,8 +2027,8 @@ a {
 .sorting-filter-wrapper::after {
   content: "";
   position: absolute;
-  top: 15px;
-  right: 23px;
+  top: 13px;
+  right: 17px;
   width: 0;
   height: 0;
   border: 5px solid #ffffff;
@@ -2281,7 +2281,7 @@ a {
   -webkit-transform: rotate(-45deg) translateX(4px) translateY(5px);
       -ms-transform: rotate(-45deg) translateX(4px) translateY(5px);
        -o-transform: rotate(-45deg) translateX(4px) translateY(5px);
-          transform: rotate(-45deg) translateX(4px) translateY(5px);
+          transform: rotate(-45deg) translateX(2px) translateY(5px);
 }
 
 .filler-filter-wrapper input:checked~label:hover::after {
