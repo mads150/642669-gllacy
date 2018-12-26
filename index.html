@@ -390,10 +390,10 @@
         <p>Мы обязательно вам ответим!</p>
         <form class="feedback-form" action="https://htmlacademy.ru" method="get">
           <div>
-            <input class="name-field" id="client-name" type="text" name="name" placeholder="Как вас зовут?">
+            <input class="name-field" id="client-name" type="text" name="name" placeholder="Как вас зовут?" required>
             <label class="visually-hidden" for="client-name">Поле ввода имени</label>
           </div>
-          <div><input class="email-field" id="client-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <div><input class="email-field" id="client-email" type="email" name="email" placeholder="Ваша почта для ответа?" required>
             <label class="visually-hidden" for="client-email">Поле ввода электронной почты</label>
           </div>
           <div>
@@ -406,6 +406,40 @@
       </section>
     </div>
   </div>
+  <script>
+
+  var link = document.querySelector(".forwarding-button");
+
+  var popup = document.querySelector(".modal-feedback");
+  var close = popup.querySelector(".modal-close");
+
+  var form = popup.querySelector("feedback-form");
+  var login = popup.querySelector("[name=name]");
+  var email = popup.querySelector("[name=email]");
+
+
+
+  link.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    login.focus();
+  }
+);
+
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+
+  form.addEventListener("submit", function(evt) {
+    if (!login.value || !email.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести имя и почту");
+    } else {
+      localStorage.setItem("login", login.value);
+    }
+  });
+  </script>
 </body>
 
 </html>

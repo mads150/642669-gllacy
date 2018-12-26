@@ -309,7 +309,8 @@ a {
 
 .user-navigation a {
   color: #ffffff;
-  background-color: #a1b4a9;
+  /*background-color: #a1b4a9;*/
+  background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1475,6 +1476,10 @@ a {
   display: none;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-feedback {
   top: 340px;
   left: 50%;
@@ -2483,7 +2488,7 @@ a {
 }
 
 .paginator {
-  position: relative;
+  /*position: relative;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2514,15 +2519,20 @@ a {
   border-radius: 50%;
 }
 
-.paginator::before,
-.paginator::after {
+.ahead,
+.backwards {
+  position: relative;
+}
+
+.ahead::before,
+.backwards::after {
   position: absolute;
   content: "";
   width: 8px;
   height: 8px;
 }
 
-.paginator::before {
+.ahead::before {
   border: 1px solid rgba(255, 255, 255, 0.2);
   top: 8px;
   left: 0;
@@ -2534,7 +2544,15 @@ a {
           transform: rotate(45deg);
 }
 
-.paginator::after {
+.paginator .ahead:hover {
+  background: none;
+}
+
+.paginator .backwards:hover {
+  background: none;
+}
+
+.backwards::after {
   border: 1px solid #ffffff;
   top: 8px;
   right: 2px;
