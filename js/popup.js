@@ -1,4 +1,3 @@
-<script>
 
 var button = document.querySelector(".forwarding-button");
 
@@ -59,5 +58,3 @@ form.addEventListener("submit", function (evt) {
      }
    }
  });
-
-</script>
