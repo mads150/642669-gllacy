@@ -170,7 +170,7 @@
                   </a>
                 </div>
                 <p class="catalog-item-price">
-                  <b>310 Р</b><span>/кг</span>
+                  <b>310 &#8381;</b><span>/кг</span>
                 </p>
               </div>
               <div class="catalog-item-overlay">
@@ -189,7 +189,7 @@
                   </a>
                 </div>
                 <p class="catalog-item-price">
-                  <b>380 Р</b><span>/кг</span>
+                  <b>380 &#8381;</b><span>/кг</span>
                 </p>
               </div>
               <div class="catalog-item-overlay">
@@ -208,7 +208,7 @@
                   </a>
                 </div>
                 <p class="catalog-item-price">
-                  <b>355 Р</b><span>/кг</span>
+                  <b>355 &#8381;</b><span>/кг</span>
                 </p>
               </div>
               <div class="catalog-item-overlay">
@@ -227,7 +227,7 @@
                   </a>
                 </div>
                 <p class="catalog-item-price">
-                  <b>415 Р</b><span>/кг</span>
+                  <b>415 &#8381;</b><span>/кг</span>
                 </p>
               </div>
               <div class="catalog-item-overlay">
@@ -388,7 +388,7 @@
       <section class="modal modal-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p>Мы обязательно вам ответим!</p>
-        <form class="feedback-form" action="https://htmlacademy.ru" method="get">
+        <form class="feedback-form" action="https://htmlacademy.ru" method="post">
           <div>
             <input class="name-field" id="client-name" type="text" name="name" placeholder="Как вас зовут?" required>
             <label class="visually-hidden" for="client-name">Поле ввода имени</label>
@@ -397,7 +397,7 @@
             <label class="visually-hidden" for="client-email">Поле ввода электронной почты</label>
           </div>
           <div>
-            <textarea class="text-field" id="client-text" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea class="text-field" id="client-text" name="sometext" placeholder="Напишите что-нибудь..."></textarea>
             <label class="visually-hidden" for="client-text">Поле ввода сообщения</label>
           </div>
           <button class="button" type="submit">Отправить</button>
@@ -406,40 +406,9 @@
       </section>
     </div>
   </div>
-  <script>
 
-  var link = document.querySelector(".forwarding-button");
-
-  var popup = document.querySelector(".modal-feedback");
-  var close = popup.querySelector(".modal-close");
-
-  var form = popup.querySelector("feedback-form");
-  var login = popup.querySelector("[name=name]");
-  var email = popup.querySelector("[name=email]");
-
-
-
-  link.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    login.focus();
-  }
-);
-
-  close.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-  form.addEventListener("submit", function(evt) {
-    if (!login.value || !email.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести имя и почту");
-    } else {
-      localStorage.setItem("login", login.value);
-    }
-  });
-  </script>
+  <script src="js/popup.js"></script>
+  
 </body>
 
 </html>
