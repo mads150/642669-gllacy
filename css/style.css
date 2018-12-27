@@ -539,26 +539,6 @@ a {
   opacity: 0.93;
 }
 
-.login-password-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
 .login-form input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -580,12 +560,33 @@ a {
   padding-right: 7px;
 }
 
-.user-navigation .login-password-info a {
+.login-password-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.login-password-info a {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   color: #323232;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #ADACAA;
   background: none;
   padding: 0;
   margin: 0;
@@ -593,14 +594,8 @@ a {
 
 .login-password-info a:hover {
   color: #E84D37;
-}
-
-.login-password-info span {
-  border-bottom: 1px solid #B2B2B2;
-}
-
-.login-password-info span:hover {
-  border-bottom: 1px solid #F9CDC4;
+  text-decoration: underline;
+  text-decoration-color: #F9CDC4;
 }
 
 .hours-and-telephone {
