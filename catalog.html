@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize-mini.css">
+  <link rel="stylesheet" href="css/style-mini.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
               </a>
               <h2 class="visually-hidden">Поиск товара</h2>
               <div class="search-form-wrapper">
-                <form class="search-form" action="https://htmlacademy.ru" method="get">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                   <div class="search-form-container">
                     <input class="search-icon" id="search-field" type="text" name="search" placeholder="Что ищем?">
                     <label class="visually-hidden" for="search-field">Поле поиска</label>
@@ -65,7 +65,7 @@
                 </svg>
                 Вход</a>
               <div class="login-form-wrapper">
-                <form class="login-form" action="https://htmlacademy.ru" method="post">
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <div class="login-form-container">
                     <div>
                       <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
@@ -98,7 +98,7 @@
                 2 товара</a>
               <h2 class="visually-hidden">Товары в корзине</h2>
               <div class="cart-form-wrapper">
-                <form class="cart-form" action="https://htmlacademy.ru" method="get">
+                <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
                   <div class="cart-form-container">
                     <table class="products-table">
                       <tr class="product-row">
@@ -145,7 +145,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
       <div class="filters-form-wrapper">
-        <form class="filter-form" action="https://htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
           <div class="filter-row-1">
             <div class="filter sorting-filter">
               <p>Сортировка:</p>
@@ -200,23 +200,23 @@
             <div class="filter filler-filter">
               <p>Наполнители:</p>
               <div class="filler-filter-wrapper">
-                <div>
+                <div class="filler">
                   <input type="checkbox" id="chocolate" name="chocolate" checked>
                   <label for="chocolate">шоколадные</label>
                 </div>
-                <div>
+                <div class="filler">
                   <input type="checkbox" id="sugar" name="sugar" checked>
                   <label for="sugar">сахарные присыпки</label>
                 </div>
-                <div>
+                <div class="filler">
                   <input type="checkbox" id="fruits" name="fruits">
                   <label for="fruits">фрукты</label>
                 </div>
-                <div>
+                <div class="filler">
                   <input type="checkbox" id="syrup" name="syrup">
                   <label for="syrup">сиропы</label>
                 </div>
-                <div>
+                <div class="filler">
                   <input type="checkbox" id="jam" name="jam">
                   <label for="jam">джемы</label>
                 </div>

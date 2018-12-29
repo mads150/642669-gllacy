@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize-mini.css">
+  <link rel="stylesheet" href="css/style-mini.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                   </a>
                   <h2 class="visually-hidden">Поиск товара</h2>
                   <div class="search-form-wrapper">
-                    <form class="search-form" action="https://htmlacademy.ru" method="get">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                       <div class="search-form-container">
                         <input id="search-field" type="text" name="search" placeholder="Что ищем?">
                         <label class="visually-hidden" for="search-field">Поле поиска</label>
@@ -70,7 +70,7 @@
                     </svg>
                     Вход</a>
                   <div class="login-form-wrapper">
-                    <form class="login-form" action="https://htmlacademy.ru" method="post">
+                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                       <div>
                         <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
                         <label class="visually-hidden" for="user-email">Электронная почта</label>
@@ -277,7 +277,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
                 самого вкусного, что у нас происходит. Обещаем не спамить и
                 не слать всякой ненужной ерунды. Честно =) </p>
-              <form class="newsletter-form" action="https://htmlacademy.ru" method="post">
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="sweet-newsletter">Электронная почта</label>
                 <input id="sweet-newsletter" type="email" name="email" placeholder="Электронная почта">
                 <button class="newsletter-button" type="submit">Отправить</button>
@@ -288,13 +288,10 @@
       </main>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map-container">
-          <!--<img src="img/map.jpg" width="1200" height="430" alt="ул.Большая Конюшенная 19/8, Санкт-Петербург"> -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545830487442"
-            width="1200" height="430" allowfullscreen></iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545830487442"
+          width="1200" height="430" allowfullscreen></iframe>
         <div class="forwarding-form-wrapper">
-          <form class="forwarding-form" action="https://htmlacademy.ru" method="post">
+          <form class="forwarding-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               Адрес главного офиса<br> и офлайн-магазина:<br>
               <span>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</span>
@@ -390,7 +387,7 @@
       <section class="modal modal-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p>Мы обязательно вам ответим!</p>
-        <form class="feedback-form" action="https://htmlacademy.ru" method="post">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <div>
             <input class="name-field" id="client-name" type="text" name="name" placeholder="Как вас зовут?" required>
             <label class="visually-hidden" for="client-name">Поле ввода имени</label>
@@ -399,7 +396,7 @@
             <label class="visually-hidden" for="client-email">Поле ввода электронной почты</label>
           </div>
           <div>
-            <textarea class="text-field" id="client-text" name="sometext" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea class="text-field" id="client-text" name="message" placeholder="Напишите что-нибудь..."></textarea>
             <label class="visually-hidden" for="client-text">Поле ввода сообщения</label>
           </div>
           <button class="button" type="submit">Отправить</button>

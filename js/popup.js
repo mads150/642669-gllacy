@@ -6,7 +6,7 @@ var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
 var namefield = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
-var textfield = popup.querySelector("[name=sometext]");
+var message = popup.querySelector("[name=message]");
 
 var isStorageSupport = true;
 var storage = "";
@@ -27,6 +27,7 @@ button.addEventListener("click", function(evt) {
   } else {
     namefield.focus();
   }
+
 });
 
 close.addEventListener("click", function(evt) {
@@ -36,7 +37,7 @@ close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!namefield.value || !email.value) {
+  if (!namefield.value || !email.value || !message.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
