@@ -601,7 +601,7 @@ a {
 
 .hours-and-telephone {
   margin-left: 979px;
-  margin-top: -5px;
+  /*margin-top: 0;*/
 }
 
 .hours-and-telephone p {
@@ -1186,7 +1186,7 @@ a {
 .forwarding-form-wrapper {
   position: absolute;
   top: 65px;
-  right: 0;
+  right: 27px;
 }
 
 .forwarding-form {
