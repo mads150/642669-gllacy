@@ -156,7 +156,7 @@ a {
 }
 
 .site-navigation span {
-  border-bottom: 1px solid #a1b5a9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation-link:hover>span {
@@ -1108,7 +1108,7 @@ a {
 
 .newsletter-button {
   padding: 10px 19px;
-  margin-left: 10px;
+  margin-left: 9px;
   margin-top: -7px;
   text-align: center;
   vertical-align: middle;
@@ -1171,16 +1171,7 @@ a {
   margin: 0;
   margin-left: -27px;
   padding: 0;
-  background-image: url("../img/map.jpg");
   background-color: #c0ecae;
-}
-
-.map iframe {
-  position: absolute;
-  min-width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 0;
 }
 
 .forwarding-form-wrapper {
@@ -2323,7 +2314,10 @@ a {
 }
 
 .range-toggle:hover {
-  background: #ababab;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -2565,7 +2559,7 @@ a {
   font-weight: 500;
   line-height: 22px;
   text-decoration: none;
-  border-bottom: 1px solid #a1b5a9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
